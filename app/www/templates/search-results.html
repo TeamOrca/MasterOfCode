@@ -1,0 +1,28 @@
+<ion-view view-title="Search results">
+    <ion-content>
+
+        <ion-list ng-repeat="service in services">
+            <ion-item  href="#/tab/service-details/{{service.id}}" >
+                <div class="list card">
+
+                    <div class="item item-avatar">
+                        <img ng-src="{{service.face}}">
+                        <h2>{{service.name}}</h2>
+                        <p>{{service.description}}</p>
+                    </div>
+
+                    <div class="item item-image">
+                        <img class="full-image" ng-src="{{service.image}}">
+                    </div>
+
+                    <a class="item item-icon-left">
+                        <i class="ion-social-usd"></i>
+                        {{service.rate}}$/hr
+                    </a>
+
+                </div>
+            </ion-item>
+        </ion-list>
+
+    </ion-content>
+</ion-view>

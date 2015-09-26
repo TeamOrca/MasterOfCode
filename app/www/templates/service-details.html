@@ -1,0 +1,50 @@
+<ion-view view-title="{{service.name}}">
+    <ion-content>
+        <img class="full-image" src="{{service.image}}">
+        <div class="item item-avatar">
+            <img src="{{service.face}}">
+            <h2>{{service.name}}</h2>
+            <p>{{service.category}}</p>
+
+          <span class="item-note">
+              0.1 km
+          </span>
+        </div>
+
+        <div class="item item-body">
+            <p>
+                {{service.description}}
+            </p>
+        </div>
+
+        <div class="item list-divider">
+
+            <div class="row">
+                <div class="col">
+                    <!-- Todo : dynamic rendering -->
+                    <i class="icon ion-ios-star ion-ios-star"></i>
+                    <i class="icon ion-ios-star ion-ios-star"></i>
+                    <i class="icon ion-ios-star ion-ios-star"></i>
+                    <i class="icon ion-ios-star ion-ios-star-half"></i>
+
+                    <span>{{service.upvotes}} votes</span>
+                </div>
+                <div class="col">
+                    <a href="javascript:;">Show comments</a>
+                </div>
+            </div>
+
+            <p class="center">
+                <i class="ion-ios-arrow-down"></i>
+            </p>
+
+        </div>
+
+        <div class="item tabs tabs-secondary tabs-icon-left">
+            <button class="button button-calm">
+                Hire this {{service.category}}
+            </button>
+        </div>
+
+    </ion-content>
+</ion-view>
