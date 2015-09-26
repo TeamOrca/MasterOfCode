@@ -45,7 +45,7 @@ angular.module('supeer', ['ionic', 'supeer.controllers', 'supeer.services'])
                 views: {
                     'tab-home': {
                         templateUrl: 'templates/service-search.html',
-                        controller: 'MainCtrl'
+                        controller: 'ServiceSearchCtrl'
                     }
                 }
             })
@@ -73,7 +73,7 @@ angular.module('supeer', ['ionic', 'supeer.controllers', 'supeer.services'])
                 views: {
                     'tab-services': {
                         templateUrl: 'templates/service-details.html',
-                        controller: 'serviceDetailsCtrl'
+                        controller: 'ServiceDetailsCtrl'
                     }
                 }
             })
