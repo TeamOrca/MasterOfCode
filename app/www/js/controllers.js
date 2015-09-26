@@ -21,4 +21,25 @@ angular.module('supeer.controllers', [])
         $scope.settings = {
             enableSomeSettings: true
         };
-    });
+    })
+
+    .controller('MerchantCtrl', function($scope, $ionicModal) {
+
+     $ionicModal.fromTemplateUrl('/templates/confirm-delete-modal.html', {
+        scope: $scope,
+        animation: 'slide-in-up'
+      }).then(function(modal) {
+        $scope.modal = modal;
+      });
+
+       $scope.openModal = function(){
+         $scope.modal.show();
+       };
+
+       $scope.$on('modal.hidden', function(e) {
+        // Execute action
+        console.log(e);
+       });
+
+    })
+    ;

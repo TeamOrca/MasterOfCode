@@ -86,7 +86,29 @@ angular.module('supeer', ['ionic', 'supeer.controllers', 'supeer.services'])
                         controller: 'AccountCtrl'
                     }
                 }
-            });
+            })
+            .state('merchantSubscribe', {
+                url: '/merchant/new',
+                templateUrl: 'templates/merchant-subscribe.html',
+                controller: 'MerchantCtrl'
+
+            })
+
+            .state('merchanttab', {
+                url: '/merchanttab',
+                abstract: true,
+                templateUrl: 'templates/merchant-tabs.html'
+            })
+            .state('merchanttab.home', {
+                url: '/merchanttab/home',
+                views: {
+                    'merchanttab-home': {
+                        templateUrl: 'templates/service-details.html',
+                        controller: 'MainCtrl'
+                    }
+                }
+            })
+            ;
 
         // if none of the above states are matched, use this as the fallback
         $urlRouterProvider.otherwise('/tab/home');

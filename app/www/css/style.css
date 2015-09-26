@@ -8,3 +8,17 @@
 .right {
     text-align: right;
 }
+
+.supeer-list{
+  padding-right: 16px;
+}
+
+.supeer-list .item{
+  border-color: transparent;
+
+}
+
+.supeer-list input[type="text"], .supeer-list textarea{
+  border: 2px #6A6A6A solid;
+    border-radius: 0px;
+}
