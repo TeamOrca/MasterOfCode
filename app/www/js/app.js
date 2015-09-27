@@ -112,6 +112,13 @@ angular.module('supeer', ['ionic', 'supeer.controllers', 'supeer.services', 'ion
 
             })
 
+            .state('merchantLogin', {
+                url: '/merchantLogin',
+                templateUrl: 'templates/login-merchant.html',
+                controller: 'LoginCtrl'
+
+            })
+
             //
         ;
 
