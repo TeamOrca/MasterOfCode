@@ -93,6 +93,12 @@ angular.module('supeer', ['ionic', 'supeer.controllers', 'supeer.services'])
                 controller: 'MerchantCtrl'
 
             })
+            .state('merchantViewRequests', {
+                url: '/merchant/requests',
+                templateUrl: 'templates/merchant-request-list.html',
+                controller: 'MerchantCtrl'
+
+            })
             ;
 
         // if none of the above states are matched, use this as the fallback
