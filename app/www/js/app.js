@@ -45,7 +45,7 @@ angular.module('supeer', ['ionic', 'supeer.controllers', 'supeer.services'])
                 views: {
                     'tab-home': {
                         templateUrl: 'templates/service-search.html',
-                        controller: 'MainCtrl'
+                        controller: 'ServiceSearchCtrl'
                     }
                 }
             })
@@ -73,7 +73,7 @@ angular.module('supeer', ['ionic', 'supeer.controllers', 'supeer.services'])
                 views: {
                     'tab-services': {
                         templateUrl: 'templates/service-details.html',
-                        controller: 'serviceDetailsCtrl'
+                        controller: 'ServiceDetailsCtrl'
                     }
                 }
             })
@@ -92,21 +92,6 @@ angular.module('supeer', ['ionic', 'supeer.controllers', 'supeer.services'])
                 templateUrl: 'templates/merchant-subscribe.html',
                 controller: 'MerchantCtrl'
 
-            })
-
-            .state('merchanttab', {
-                url: '/merchanttab',
-                abstract: true,
-                templateUrl: 'templates/merchant-tabs.html'
-            })
-            .state('merchanttab.home', {
-                url: '/merchanttab/home',
-                views: {
-                    'merchanttab-home': {
-                        templateUrl: 'templates/service-details.html',
-                        controller: 'MainCtrl'
-                    }
-                }
             })
             ;
 
