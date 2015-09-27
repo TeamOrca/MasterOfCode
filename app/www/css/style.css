@@ -133,25 +133,33 @@ a {
 
 
 .hire-button {
-    padding: 10px 0px;
+  padding: 10px 0px;
 }
 
 ul.rating li {
-    display: inline;
-    border: 0px;
-    background: none;
-    padding: 5px 2px;
+  display: inline;
+  border: 0px;
+  background: none;
+  padding: 5px 2px;
 }
 
 .rating {
-    color: #FCDF81;
+  color: #FCDF81;
 }
 
 .service-rates {
-    font-size: 1.3em!important;
+  font-size: 1.3em!important;
 }
 
 .no-y-padding {
-    padding-top: 0px !important;
-    padding-bottom: 0px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.search-result>a:first-child {
+    padding: inherit;
+}
+
+.angular-google-map-container {
+    height: 100%;
 }

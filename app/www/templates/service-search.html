@@ -20,20 +20,26 @@
       </label>
     </div>
 
-    <div class="list">
+      <ion-list ng-repeat="service in services">
+          <ion-item class="search-result" href="#/tab/service-details/{{service.id}}">
 
-      <a ng-repeat="service in services"
-         href="#/tab/service-details/{{service.id}}"
-         class="item item-thumbnail-left">
+              <div class="item item-avatar no-border">
+                  <img src="{{service.face}}">
+                  <div style="float: right">
+                      <p class="service-rates">
+                          {{service.rate}} $ / h
+                      </p>
+                      <p class="item-note">
+                          0.1 km
+                      </p>
+                  </div>
+                  <h2>{{service.name}}</h2>
+                  <p>{{service.category}}</p>
+                  <rating class="rating" ng-model="service.ratingAverage" max="5"></rating>
+              </div>
 
-        <img  ng-src="{{ service.thumb }}">
-        <h2>{{ service.name }}</h2>
-        <h4>{{ service.category }}</h4>
-        <h4>{{ service.rate }} $ / h</h4>
-        <h4>{{ getDistace(service.position) }} km </h4>
-      </a>
-
-    </div>
+          </ion-item>
+      </ion-list>
 
   </ion-content>
 </ion-view>

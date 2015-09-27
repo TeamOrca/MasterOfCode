@@ -2,25 +2,23 @@
     <ion-content>
 
         <ion-list ng-repeat="service in services">
-            <ion-item  href="#/tab/service-details/{{service.id}}" >
-                <div class="list card">
+            <ion-item class="search-result" href="#/tab/service-details/{{service.id}}">
 
-                    <div class="item item-avatar">
-                        <img ng-src="{{service.face}}">
-                        <h2>{{service.name}}</h2>
-                        <p>{{service.description}}</p>
+                <div class="item item-avatar no-border">
+                    <img src="{{service.face}}">
+                    <div style="float: right">
+                        <p class="service-rates">
+                            {{service.rate}} $ / h
+                        </p>
+                        <p class="item-note">
+                            0.1 km
+                        </p>
                     </div>
-
-                    <div class="item item-image">
-                        <img class="full-image" ng-src="{{service.image}}">
-                    </div>
-
-                    <a class="item item-icon-left">
-                        <i class="ion-social-usd"></i>
-                        {{service.rate}}$/hr
-                    </a>
-
+                    <h2>{{service.name}}</h2>
+                    <p>{{service.category}}</p>
+                    <rating class="rating" ng-model="service.ratingAverage" max="5"></rating>
                 </div>
+
             </ion-item>
         </ion-list>
 
