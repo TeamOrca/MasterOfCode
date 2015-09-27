@@ -79,7 +79,11 @@ angular.module('supeer', ['ionic', 'supeer.controllers', 'supeer.services', 'ion
                 url: '/merchant/new',
                 templateUrl: 'templates/merchant-subscribe.html',
                 controller: 'MerchantCtrl'
-
+            })
+            .state('merchantEdit', {
+                url: '/merchant/edit',
+                templateUrl: 'templates/merchant-edit.html',
+                controller: 'MerchantCtrl'
             })
             .state('merchantViewRequests', {
                 url: '/merchant/requests',
@@ -116,7 +120,6 @@ angular.module('supeer', ['ionic', 'supeer.controllers', 'supeer.services', 'ion
                 url: '/merchantLogin',
                 templateUrl: 'templates/login-merchant.html',
                 controller: 'LoginCtrl'
-
             })
 
             //
