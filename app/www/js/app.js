@@ -98,8 +98,8 @@ angular.module('supeer', ['ionic', 'supeer.controllers', 'supeer.services', 'ion
 
             })
             .state('clientPendingRequests', {
-                url: '/client/pending_requests',
-                templateUrl: 'templates/client-pending-requests.html',
+                url: '/client/requests',
+                templateUrl: 'templates/client-requests.html',
                 controller: 'ClientCtrl'
 
             })

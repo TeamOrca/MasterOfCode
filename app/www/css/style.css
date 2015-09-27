@@ -225,3 +225,17 @@ ul.rating li {
 .red {
     background: red;
 }
+
+#panier a img {
+    display:block;
+    margin:auto;
+}
+
+#panier {
+    width:100%;
+}
+
+#panier a img {
+    display : block;
+    margin : auto;
+}

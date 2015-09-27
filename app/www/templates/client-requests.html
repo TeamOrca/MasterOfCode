@@ -14,11 +14,16 @@
               <p>{{request.phone}}</p>
               <p>{{request.wantedDate}}</p>
             </div>
-            <div class="col">
+            <div class="col-25">
               <div class="row">
                 <span ng-if="request.status == 'pending'" class="badge badge-energized">pending</span>
                 <span ng-if="request.status == 'confirmed'" class="badge badge-balanced">accepted</span>
+                <span ng-if="request.status == 'ready'" class="badge badge-calm">pay now</span>
+                <span ng-if="request.status == 'payed'" class="badge badge-positive">payed</span>
                 <span ng-if="request.status == 'refused'" class="badge badge-assertive">cancelled</span>
+
+                <p ng-if="request.value" class="service-rates" style="text-align: right; position: relative; top: 30px; left: 50px;">{{request.value}} $</p>
+
               </div>
             </div>
           </div>

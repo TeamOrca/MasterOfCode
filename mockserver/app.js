@@ -9,7 +9,6 @@ app.get('/hosted_payments/:amount', function (req, res) {
   res.render('index', {amount: req.params.amount});
 });
 
-
 var server = app.listen(8002, function () {
   var host = server.address().address;
   var port = server.address().port;
