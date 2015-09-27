@@ -92,7 +92,14 @@ angular.module('supeer', ['ionic', 'supeer.controllers', 'supeer.services'])
                         controller: 'AccountCtrl'
                     }
                 }
-            });
+            })
+            .state('merchantSubscribe', {
+                url: '/merchant/new',
+                templateUrl: 'templates/merchant-subscribe.html',
+                controller: 'MerchantCtrl'
+
+            })
+            ;
 
         // if none of the above states are matched, use this as the fallback
         $urlRouterProvider.otherwise('/welcome');

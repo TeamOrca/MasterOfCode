@@ -1,0 +1,63 @@
+<ion-view title="Home">
+  <ion-content padding="true">
+    <div class="supeer-list">
+
+      <label class="item item-input item-stacked-label">
+         <h2 style="font-size: 1.3rem">Create a retailer page </h2>
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label" style="display: block; width: 100%">Service Category</span>
+        <div class="select-wrapper">
+          <select>
+            <option>Choose a category</option>
+            <option>asdas</option>
+            <option>asdas</option>
+          </select>
+        </div>
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Retail Name</span>
+        <input type="text" placeholder="Enter your company name">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label" style="display:block;">Your price</span>
+        <input type="text" placeholder="00" style="display:inline-block; width: 20%; text-align: right;"> $/h
+      </label>
+       <label class="item item-input item-stacked-label">
+        <span class="input-label">Phone Number</span>
+        <input type="tel" placeholder="514-123-1234">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Location</span>
+        <input type="text" placeholder="Enter your company address">
+      </label>
+      <div class="row">
+        <div class="col" style="padding-left: 12px;">
+          <img class="logo-preview" src="/img/logo_pre.png">
+        </div>
+        <div class="col col-75">
+          <a class="item item-icon-left " href="#">
+            <i class="icon ion-ios-download-outline"></i>
+              Import a logo
+          </a>
+        </div>
+      </div>
+       <a class="item item-icon-left" href="#">
+         <i class="icon ion-ios-download-outline"></i>
+          Import images of your company
+      </a>
+
+      <label class="item item-input item-stacked-label">
+         <span class="input-label">Service Details</span>
+        <textarea placeholder="Comments"></textarea>
+      </label>
+      <label class="item item-input item-stacked-label">
+         <button class="button button-calm" style="width:100%;" ng-click="saveAndRedirect()">
+          Submit your page
+        </button>
+      </label>
+
+    </div>
+
+  </ion-content>
+</ion-view>

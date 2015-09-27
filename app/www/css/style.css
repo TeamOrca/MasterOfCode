@@ -21,6 +21,60 @@
     font-weight: bold;
 }
 
+.supeer-list{
+  padding-right: 16px;
+}
+
+.supeer-list .item{
+  border-color: transparent;
+}
+
+.logo-preview {
+    max-height: 65px;
+}
+
+.supeer-list input[type="text"], .supeer-list input[type="tel"], .supeer-list textarea, .supeer-list select{
+  border: 2px #6A6A6A solid;
+  border-radius: 0px;
+  padding: 5px;
+}
+
+.supeer-list select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  padding: .4em 2em .4em 1em;
+  width: 100%;
+  background-color: #FFF;
+}
+.select-wrapper {
+  width: 100%;
+  display: inline-block;
+}
+.select-wrapper::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  right: 0px;
+  top: 69%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: block;
+  width: 40px;
+  height: 34px;
+  background: url("../img/icon-select.svg") no-repeat center center;
+  pointer-events: none;
+  background-color: #6A6A6A;
+}
+
+
+}
+
 .welcome-title{
    text-align: left;
 }
