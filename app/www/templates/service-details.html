@@ -58,7 +58,7 @@
 
             <div ng-show="isCommentsVisible" ng-repeat="rating in service.ratings" >
                 <div class="item item-avatar no-border">
-                    <img ng-src="http://api.adorable.io/avatars/285/abott@{{rating.user}}.png">
+                    <img ng-src="http://api.adorable.io/avatars/285/abott@{{$index}}.png">
                     <h2>{{rating.user}}</h2>
                     <p><rating class="rating" ng-model="rating.rating" max="5"></rating></p>
                     <p style="white-space: normal;">{{rating.comments}}</p>
