@@ -1,4 +1,10 @@
 <ion-view view-title="{{service.name}}">
+
+    <ion-nav-bar>
+        <ion-nav-back-button class="button-dark">
+        </ion-nav-back-button>
+    </ion-nav-bar>
+
     <ion-content>
 
         <ion-slide-box on-slide-changed="slideHasChanged($index)"
@@ -6,13 +12,13 @@
                        class="service-details-slider">
             <ion-slide ng-repeat="image in service.images">
                 <div class="box">
-                    <img class="full-image" src="{{image}}">
+                    <img class="full-image" ng-src="{{image}}">
                 </div>
             </ion-slide>
         </ion-slide-box>
 
         <div class="item item-avatar no-border">
-            <img src="{{service.face}}">
+            <img ng-src="{{service.face}}">
             <div style="float: right">
                 <p class="service-rates">
                     {{service.rate}} $ / h

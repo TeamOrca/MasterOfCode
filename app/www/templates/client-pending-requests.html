@@ -18,13 +18,13 @@
               <div class="row">
                 <span ng-if="request.status == 'pending'" class="badge badge-energized">pending</span>
                 <span ng-if="request.status == 'confirmed'" class="badge badge-balanced">accepted</span>
-                <span ng-if="request.status == 'refused'" class="badge badge-assertive">refused</span>
+                <span ng-if="request.status == 'refused'" class="badge badge-assertive">cancelled</span>
               </div>
             </div>
           </div>
           <ion-option-button class="button-assertive"
                              ng-click="refuse(request)">
-            refuse
+            cancel
           </ion-option-button>
 
         </ion-item>

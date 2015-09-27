@@ -1,5 +1,5 @@
 angular.module('supeer.controllers')
-    .controller('SearchResultCtrl', function($scope, ServicesService, $ionicLoading) {
+    .controller('SearchResultCtrl', function($scope, ServicesService, $ionicLoading, $ionicScrollDelegate) {
         $scope.services = ServicesService.all();
 
         $scope.mapCreated = function(map) {
@@ -14,14 +14,8 @@ angular.module('supeer.controllers')
                 return;
             }
 
-            $scope.loading = $ionicLoading.show({
-                template: '<ion-spinner icon="android"></ion-spinner>',
-                showBackdrop: false
-            });
-
             navigator.geolocation.getCurrentPosition(function (position) {
                 $scope.map.setCenter(new google.maps.LatLng(position.coords.latitude, position.coords.longitude));
-                $ionicLoading.hide();
             }, function (error) {
                 console.log('Unable to get location: ' + error.message);
             });
@@ -66,6 +60,20 @@ angular.module('supeer.controllers')
             }
 
             $scope.services.forEach(addMarker);
+
+            document.getElementById('search-result-content').onscroll = function() {
+                $scope.scrollTop = $ionicScrollDelegate.getScrollPosition().top;
+
+                if ($scope.scrollTop > 300) {
+                    $scope.showSearchHeader = true;
+                } else {
+                    $scope.showSearchHeader = false;
+                }
+
+                $scope.$apply();
+
+            };
+
         }
 
     });

@@ -190,3 +190,38 @@ ul.rating li {
 .loading-container .loading {
     background-color: inherit;
 }
+
+.search-bar {
+    background-color: #333333;
+    color: #F5F5F5;
+}
+
+.search-bar select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    padding: .4em 2em .4em 1em;
+    width: 100%;
+    background-color: transparent;
+    color: #F5F5F5;
+    border: none;
+    border-bottom: solid 1px #36c2cb;
+}
+
+.search-bar .field{
+    border-bottom: solid 1px #36c2cb;
+    margin-left: 10px;
+}
+.search-bar .field-icon {
+    color : #36c2cb;
+}
+
+#search-bar-top {
+    margin-top: 43px;
+}
+
+.red {
+    background: red;
+}

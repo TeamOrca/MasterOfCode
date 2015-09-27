@@ -6,11 +6,16 @@ angular.module('supeer.services')
       var categories = [
         {
           id : 1,
-          name : 'HouseKeeper',
+          name : 'All',
           image : 'http://desertsand.com.au/wp-content/uploads/2014/08/hotel.jpg'
         },
         {
           id : 2,
+          name : 'HouseKeeper',
+          image : 'http://desertsand.com.au/wp-content/uploads/2014/08/hotel.jpg'
+        },
+        {
+          id : 3,
           name : 'Plumber',
           image : 'http://ccdci.org/wp-content/uploads/2015/03/plumber-tips.jpg'
         }

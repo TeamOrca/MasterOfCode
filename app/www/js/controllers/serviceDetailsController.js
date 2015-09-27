@@ -19,6 +19,4 @@ angular.module('supeer.controllers')
             $state.go("clientPendingRequests");
         }
 
-        $scope.rate = 3;
-        $scope.max = 5;
     });

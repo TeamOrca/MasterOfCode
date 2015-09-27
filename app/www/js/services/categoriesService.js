@@ -34,10 +34,39 @@ angular.module('supeer.services')
                         rating : 4
                     }
                 ],
-                ratingAverage : 4
+                ratingAverage : 4,
+                distance : 0.1
             },
             {
                 id : 2,
+                name : 'Good Housekeeping',
+                category : 'Heusekeeper',
+                description : "Aenean euismod lectus quis nibh commodo, in maximus libero viverra. Praesent ac maximus turpis, sed feugiat nisi. In hac habitasse platea dictumst. Proin elementum sem ut ante convallis ultrices.",
+                rate : 12,
+                thumb : 'img/housekeeper_square.jpg',
+                images : [
+                    'img/housekeeper.jpg',
+                    'img/housekeeper2.jpg',
+                    'img/housekeeper3.jpg'
+                ],
+                face : 'img/cleaning_2.png',
+                upvotes : 9,
+                position : {
+                    latitude: 45.13324,
+                    longitude : -73.668876
+                },
+                ratings : [
+                    {
+                        user : 'Wei Huang',
+                        comments : "Great service!!",
+                        rating : 5
+                    }
+                ],
+                ratingAverage : 5,
+                distance : 0.7
+            },
+            {
+                id : 3,
                 name : 'Plumber inc.',
                 category : 'Plumber',
                 image : 'plumber.png',
@@ -52,8 +81,8 @@ angular.module('supeer.services')
                 face : 'img/logo_pre.png',
                 upvotes : 24,
                 position : {
-                    latitude : 45.512778,
-                    longitude : -73.558404
+                    latitude : 45.502269,
+                    longitude : -73.611308
                 },
                 ratings : [
                     {
@@ -67,7 +96,110 @@ angular.module('supeer.services')
                         rating : 4
                     }
                 ],
-                ratingAverage : 4
+                ratingAverage : 4,
+                distance : 0.4
+            },
+            {
+                id : 3,
+                name : 'Go Plumber',
+                category : 'Plumber',
+                image : 'plumber.png',
+                description : "The best Plumping services in Montreal",
+                rate : 23,
+                thumb : 'img/plumber_square.jpg',
+                images : [
+                    'img/plumber.jpg',
+                    'img/plumber2.jpg',
+                    'img/plumber3.jpg',
+                ],
+                face : 'img/logo_pre.png',
+                upvotes : 10,
+                position : {
+                    latitude : 45.452206,
+                    longitude : -73.717070
+                },
+                ratings : [
+                    {
+                        user : 'Adam E. Roberts',
+                        comments : 'Nulla facilisi. Cras ultricies mauris nec nisi semper dictum. ',
+                        rating : 3
+                    },
+                    {
+                        user : 'Anthony T. Harrison',
+                        comments : 'Praesent ultrices sollicitudin metus, vel vehicula massa fringilla facilisis. Nulla gravida, lectus sit amet convallis eleifend',
+                        rating : 2
+                    }
+                ],
+                ratingAverage : 2,
+                distance : 0.5
+            },
+            {
+                id : 3,
+                name : 'Hurry Plumber',
+                category : 'Plumber',
+                image : 'plumber.png',
+                description : "Highly skilled and certified Plumber in Montreal 514-566-8227",
+                rate : 20,
+                thumb : 'img/plumber_square.jpg',
+                images : [
+                    'img/plumber.jpg',
+                    'img/plumber2.jpg',
+                    'img/plumber3.jpg',
+                ],
+                face : 'img/logo_pre.png',
+                upvotes : 12,
+                position : {
+                    latitude : 45.521078,
+                    longitude : -73.547546
+                },
+                ratings : [
+                    {
+                        user : 'Adam E. Roberts',
+                        comments : 'Consectetur adipiscing elit. Integer in.',
+                        rating : 3
+                    },
+                    {
+                        user : 'Anthony T. Harrison',
+                        comments : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis.',
+                        rating : 3
+                    }
+                ],
+                ratingAverage : 3,
+                distance : 0.7
+            },
+            {
+                id : 3,
+                name : 'Galaxy Plumbing',
+                category : 'Plumber',
+                image : 'plumber.png',
+                description : "Cheap & Quick fix for your plumbing needs.",
+                rate : 18.50,
+                thumb : 'img/plumber_square.jpg',
+                images : [
+                    'img/plumber.jpg',
+                    'img/plumber2.jpg',
+                    'img/plumber3.jpg',
+                ],
+                face : 'img/logo_pre.png',
+                upvotes : 12,
+                position : {
+                    latitude : 45.514703,
+                    longitude : -73.537504
+                },
+                ratings : [
+                    {
+                        user : 'Robert M. Coney',
+                        comments : 'Consectetur adipiscing elit. Integer in.',
+                        rating : 3
+                    },
+                    {
+                        user : 'Renae W. Alexander',
+                        comments : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis.',
+                        rating : 3
+                    }
+                ],
+                ratingAverage : 3,
+                distance : 0.9
             }
         ]
 

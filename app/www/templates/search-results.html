@@ -1,5 +1,11 @@
 <ion-view view-title="Search results">
-    <ion-content>
+
+    <div id="search-bar-top" class="item search-bar" ng-show="showSearchHeader"  >
+        <span style="float: right;"><span class="field">Near you</span> <i class="field-icon icon ion-ios-arrow-down"></i></span>
+        Find <span class="field">Plumber</span> <i class="field-icon icon ion-ios-arrow-down"></i>
+    </div>
+
+    <ion-content id="search-result-content">
         <div class="map"
              lat="45.511966"
              lng="-73.570335"
@@ -8,17 +14,22 @@
              on-create="mapCreated(map)">
         </div>
 
+        <div id="search-bar" class="item search-bar">
+            <span style="float: right;"><span class="field">Near you</span> <i class="field-icon icon ion-ios-arrow-down"></i></span>
+            Find <span class="field">Plumber</span> <i class="field-icon icon ion-ios-arrow-down"></i>
+        </div>
+
         <ion-list ng-repeat="service in services">
             <ion-item class="search-result" href="#/service-details/{{service.id}}">
 
                 <div class="item item-avatar no-border">
-                    <img src="{{service.face}}">
+                    <img ng-src="{{service.face}}">
                     <div style="float: right">
                         <p class="service-rates">
                             {{service.rate}} $ / h
                         </p>
                         <p class="item-note">
-                            0.1 km
+                            {{service.distance}} km
                         </p>
                     </div>
                     <h2>{{service.name}}</h2>
@@ -27,6 +38,7 @@
                 </div>
 
             </ion-item>
+
         </ion-list>
 
     </ion-content>
