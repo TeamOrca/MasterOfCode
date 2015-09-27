@@ -1,8 +1,15 @@
 <ion-view view-title="Search results">
     <ion-content>
+        <div class="map"
+             lat="45.511966"
+             lng="-73.570335"
+             zoom="12"
+             map
+             on-create="mapCreated(map)">
+        </div>
 
         <ion-list ng-repeat="service in services">
-            <ion-item class="search-result" href="#/tab/service-details/{{service.id}}">
+            <ion-item class="search-result" href="#/service-details/{{service.id}}">
 
                 <div class="item item-avatar no-border">
                     <img src="{{service.face}}">

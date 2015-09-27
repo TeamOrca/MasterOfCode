@@ -32,65 +32,47 @@ angular.module('supeer', ['ionic', 'supeer.controllers', 'supeer.services', 'ion
         $stateProvider
 
             // setup an abstract state for the tabs directive
-            .state('tab', {
-                url: '/tab',
-                abstract: true,
-                templateUrl: 'templates/tabs.html'
-            })
+            /*            .state('tab', {
+             url: '/tab',
+             abstract: true,
+             templateUrl: 'templates/tabs.html'
+             })*/
 
             .state('welcome', {
-              url: '/welcome',
-              templateUrl: 'templates/welcome.html',
-              controller: 'welcomeCtrl'
+                url: '/welcome',
+                templateUrl: 'templates/welcome.html',
+                controller: 'welcomeCtrl'
             })
 
             // Each tab has its own nav history stack:
 
-            .state('tab.home', {
-                url: '/home',
-                views: {
-                    'tab-home': {
-                        templateUrl: 'templates/service-search.html',
-                        controller: 'ServiceSearchCtrl'
-                    }
-                }
+            .state('service-search', {
+                url: '/service-search',
+                templateUrl: 'templates/service-search.html',
+                controller: 'ServiceSearchCtrl'
             })
-            .state('tab.search-results', {
+            .state('search-results', {
                 url: '/search-results',
-                views: {
-                    'tab-services': {
-                        templateUrl: 'templates/search-results.html',
-                        controller: 'SearchResultCtrl'
-                    }
-                }
+                templateUrl: 'templates/search-results.html',
+                controller: 'SearchResultCtrl'
             })
-            .state('tab.categories', {
+            .state('categories', {
                 url: '/categories/:categoryId',
-                views: {
-                    'tab-services': {
-                        templateUrl: 'templates/service-categories.html',
-                        controller: 'SearchResultCtrl'
-                    }
-                }
+                templateUrl: 'templates/service-categories.html',
+                controller: 'SearchResultCtrl'
             })
 
-            .state('tab.service-details', {
+            .state('service-details', {
                 url: '/service-details/:serviceId',
-                views: {
-                    'tab-services': {
-                        templateUrl: 'templates/service-details.html',
-                        controller: 'ServiceDetailsCtrl'
-                    }
-                }
+                templateUrl: 'templates/service-details.html',
+                controller: 'ServiceDetailsCtrl'
             })
 
-            .state('tab.account', {
+            .state('account', {
                 url: '/account',
                 views: {
-                    'tab-account': {
-                        templateUrl: 'templates/tab-account.html',
-                        controller: 'AccountCtrl'
-                    }
+                    templateUrl: 'templates/account.html',
+                    controller: 'AccountCtrl'
                 }
             })
             .state('merchantSubscribe', {
@@ -112,7 +94,6 @@ angular.module('supeer', ['ionic', 'supeer.controllers', 'supeer.services', 'ion
 
             })
 
-
             .state('merchantHostedPayment', {
                 url: '/merchant/hosted_payment',
                 templateUrl: 'templates/merchant-hosted-payment.html',
@@ -121,7 +102,7 @@ angular.module('supeer', ['ionic', 'supeer.controllers', 'supeer.services', 'ion
             })
 
             //
-            ;
+        ;
 
         // if none of the above states are matched, use this as the fallback
         $urlRouterProvider.otherwise('/welcome');
