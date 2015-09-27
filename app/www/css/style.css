@@ -8,3 +8,15 @@
 .right {
     text-align: right;
 }
+
+.title {
+    font-size: 25px !important;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.light {
+    font-weight: bold;
+}
