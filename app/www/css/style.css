@@ -1,7 +1,7 @@
 /* Empty. Add your own CSS if you like */
 
 a {
-  color: inherit;
+    color: inherit;
 }
 
 .center {
@@ -27,15 +27,15 @@ a {
 }
 
 .no-border {
-  border: none;
+    border: none;
 }
 
 .supeer-list{
-  padding-right: 16px;
+    padding-right: 16px;
 }
 
 .supeer-list .item{
-  border-color: transparent;
+    border-color: transparent;
 }
 
 .logo-preview {
@@ -43,47 +43,47 @@ a {
 }
 
 .supeer-list input[type="text"], .supeer-list input[type="tel"], .supeer-list textarea, .supeer-list select{
-  border: 2px #6A6A6A solid;
-  border-radius: 0px;
-  padding: 5px;
+    border: 2px #6A6A6A solid;
+    border-radius: 0px;
+    padding: 5px;
 }
 
 .supeer-list select{
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
-  padding: .4em 2em .4em 1em;
-  width: 100%;
-  background-color: #FFF;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    padding: .4em 2em .4em 1em;
+    width: 100%;
+    background-color: #FFF;
 }
 .select-wrapper {
-  width: 100%;
-  display: inline-block;
-  position: relative;
+    width: 100%;
+    display: inline-block;
+    position: relative;
 }
 .select-wrapper::after {
-  content: '';
-  position: absolute;
-  z-index: 1;
-  right: 0px;
-  top: 69%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  display: block;
-  width: 40px;
-  height: 34px;
-  background: url("../img/icon-select.svg") no-repeat center center;
-  pointer-events: none;
-  background-color: #6A6A6A;
+    content: '';
+    position: absolute;
+    z-index: 1;
+    right: 0px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: block;
+    width: 40px;
+    height: 34px;
+    background: url("../img/icon-select.svg") no-repeat center center;
+    pointer-events: none;
+    background-color: #6A6A6A;
 }
 
 .service-details-slider {
-  margin-bottom: -6px;
+    margin-bottom: -6px;
 }
 
 .welcome-title{
@@ -96,21 +96,21 @@ a {
 }
 
 #welcome-top .select-wrapper select{
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
-  padding: .4em 2em .4em 1em;
-  width: 100%;
-  background-color: #FFF;
-  border: 2px #6A6A6A solid;
-  border-radius: 0px;
-  position:relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    padding: .4em 2em .4em 1em;
+    width: 100%;
+    background-color: #FFF;
+    border: 2px #6A6A6A solid;
+    border-radius: 0px;
+    position:relative;
 }
 
 #welcome-top .select-wrapper::after{
- right: 10px;
+    right: 10px;
 }
 
 .welcome-top-text{
@@ -152,27 +152,27 @@ a {
 
 
 .hire-button {
-  padding: 10px 0px;
+    padding: 10px 0px;
 }
 
 ul.rating li {
-  display: inline;
-  border: 0px;
-  background: none;
-  padding: 5px 2px;
+    display: inline;
+    border: 0px;
+    background: none;
+    padding: 5px 2px;
 }
 
 .rating {
-  color: #FCDF81;
+    color: #FCDF81;
 }
 
 .service-rates {
-  font-size: 1.3em!important;
+    font-size: 1.3em!important;
 }
 
 .no-y-padding {
-  padding-top: 0px !important;
-  padding-bottom: 0px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
 }
 
 .search-result>a:first-child {
