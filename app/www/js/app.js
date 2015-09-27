@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'supeer.services' is found in services.js
 // 'supeer.controllers' is found in controllers.js
-angular.module('supeer', ['ionic', 'supeer.controllers', 'supeer.services', 'ionic.rating'])
+angular.module('supeer', ['ionic', 'supeer.controllers', 'supeer.services', 'ionic.rating', 'supeer.directives'])
 
     .run(function($ionicPlatform) {
         $ionicPlatform.ready(function() {
