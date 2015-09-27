@@ -1,4 +1,9 @@
 /* Empty. Add your own CSS if you like */
+
+a {
+  color: inherit;
+}
+
 .center {
     text-align: center;
 }
@@ -19,6 +24,10 @@
 
 .light {
     font-weight: bold;
+}
+
+.no-border {
+  border: none;
 }
 
 .supeer-list{
@@ -72,38 +81,85 @@
   background-color: #6A6A6A;
 }
 
+.service-details-slider {
+  margin-bottom: -6px;
+}
 
 .welcome-title{
-   text-align: left;
+    text-align: left;
 }
 
 #welcome-top{
-  background-image: url('../img/home.jpg');
-  height: 250px;
+    background-image: url('../img/home.jpg');
+    height: 250px;
 
 }
 .welcome-top-text{
-  text-align: center;
-  padding-top: 20%;
-  padding-left: 5%;
-  padding-right: 5%;
-  font-size:1.8em;
-  line-height: 1.8em;
+    text-align: center;
+    padding-top: 20%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size:1.8em;
+    line-height: 1.8em;
 }
 
 .color-underline{
-  text-decoration-color: red;
+    text-decoration-color: red;
 }
 
 #welcome-center{
-  height: 150px;
-  background-color: #4D4E53;
-  text-align: center;
-  padding: 0 5%;
-  color:white
+    height: 150px;
+    background-color: #4D4E53;
+    text-align: center;
+    padding: 0 5%;
+    color:white
 }
 
 .welcome-center-hightlight{
-  padding: 8% 0;
-  font-size: 1.5em;
+    padding: 8% 0;
+    font-size: 1.5em;
+}
+
+.welcome-bottom-heightlight{
+    padding: 8%;
+    font-size: 1.8em;
+    color: #5B5B5B;
+}
+.welcome-bottom-image{
+    bottom: -120px;
+    right: 0;
+    position: absolute;
+}
+
+
+.hire-button {
+  padding: 10px 0px;
+}
+
+ul.rating li {
+  display: inline;
+  border: 0px;
+  background: none;
+  padding: 5px 2px;
+}
+
+.rating {
+  color: #FCDF81;
+}
+
+.service-rates {
+  font-size: 1.3em!important;
+}
+
+.no-y-padding {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.search-result>a:first-child {
+    padding: inherit;
+}
+
+.angular-google-map-container {
+    height: 100%;
 }
