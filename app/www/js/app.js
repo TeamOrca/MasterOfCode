@@ -93,11 +93,22 @@ angular.module('supeer', ['ionic', 'supeer.controllers', 'supeer.services', 'ion
                 controller: 'MerchantCtrl'
 
             })
+            .state('clientPendingRequests', {
+                url: '/client/pending_requests',
+                templateUrl: 'templates/client-pending-requests.html',
+                controller: 'ClientCtrl'
 
+            })
             .state('merchantHostedPayment', {
                 url: '/merchant/hosted_payment',
                 templateUrl: 'templates/merchant-hosted-payment.html',
                 controller: 'hostPaymentCtrl'
+
+            })
+            .state('login', {
+                url: '/login',
+                templateUrl: 'templates/login.html',
+                controller: 'LoginCtrl'
 
             })
 

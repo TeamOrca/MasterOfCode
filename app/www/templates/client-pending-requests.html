@@ -1,0 +1,34 @@
+<ion-view title="Requests">
+  <ion-content padding="false">
+    <div class="list">
+      <div class="item item-divider">
+        Scheduled for Today
+      </div>
+      <ion-list ng-repeat="request in requests">
+        <ion-item class="item"
+                  can-swipe="listCanSwipe"
+                  ng-click="viewRequest(request)">
+          <div class="row">
+            <div class="col-75">
+              <h2>{{request.name}}</h2>
+              <p>{{request.phone}}</p>
+              <p>{{request.wantedDate}}</p>
+            </div>
+            <div class="col">
+              <div class="row">
+                <span ng-if="request.status == 'pending'" class="badge badge-energized">pending</span>
+                <span ng-if="request.status == 'confirmed'" class="badge badge-balanced">accepted</span>
+                <span ng-if="request.status == 'refused'" class="badge badge-assertive">refused</span>
+              </div>
+            </div>
+          </div>
+          <ion-option-button class="button-assertive"
+                             ng-click="refuse(request)">
+            refuse
+          </ion-option-button>
+
+        </ion-item>
+      </ion-list>
+    </div>
+  </ion-content>
+</ion-view>

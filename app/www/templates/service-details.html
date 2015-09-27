@@ -2,6 +2,7 @@
     <ion-content>
 
         <ion-slide-box on-slide-changed="slideHasChanged($index)"
+                       auto-play="true"
                        class="service-details-slider">
             <ion-slide ng-repeat="image in service.images">
                 <div class="box">
@@ -31,7 +32,7 @@
             </p>
         </div>
 
-        <div class="item list-divider no-y-padding"">
+        <div class="item list-divider no-y-padding">
 
             <div class="row">
                 <div class="col">

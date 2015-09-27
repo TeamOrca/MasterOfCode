@@ -6,9 +6,12 @@ angular.module('supeer.controllers')
 
         $scope.showComments = function() {
             $scope.isCommentsVisible = !$scope.isCommentsVisible;
+            $ionicScrollDelegate.resize();
 
             if ($scope.isCommentsVisible) {
-                $ionicScrollDelegate.resize()
+                $ionicScrollDelegate.scrollBottom(true);
+            } else {
+                $ionicScrollDelegate.scrollTop(true);
             }
         };
 
