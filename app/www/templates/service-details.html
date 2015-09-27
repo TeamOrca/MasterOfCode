@@ -1,47 +1,70 @@
 <ion-view view-title="{{service.name}}">
     <ion-content>
-        <img class="full-image" src="{{service.image}}">
-        <div class="item item-avatar">
+
+        <ion-slide-box on-slide-changed="slideHasChanged($index)"
+                       class="service-details-slider">
+            <ion-slide ng-repeat="image in service.images">
+                <div class="box">
+                    <img class="full-image" src="{{image}}">
+                </div>
+            </ion-slide>
+        </ion-slide-box>
+
+        <div class="item item-avatar no-border">
             <img src="{{service.face}}">
+            <div style="float: right">
+                <p class="service-rates">
+                    {{service.rate}} $ / h
+                </p>
+                <p class="item-note">
+                    0.1 km
+                </p>
+            </div>
             <h2>{{service.name}}</h2>
             <p>{{service.category}}</p>
-
-          <span class="item-note">
-              0.1 km
-          </span>
+            <rating class="rating" ng-model="service.ratingAverage" max="5"></rating>
         </div>
 
-        <div class="item item-body">
+        <div class="item item-body no-border" style="padding-top: 0">
             <p>
                 {{service.description}}
             </p>
         </div>
 
-        <div class="item list-divider">
+        <div class="item list-divider no-y-padding"">
 
             <div class="row">
                 <div class="col">
-                    <!-- Todo : dynamic rendering -->
-                    <i class="icon ion-ios-star ion-ios-star"></i>
-                    <i class="icon ion-ios-star ion-ios-star"></i>
-                    <i class="icon ion-ios-star ion-ios-star"></i>
-                    <i class="icon ion-ios-star ion-ios-star-half"></i>
-
-                    <span>{{service.upvotes}} votes</span>
+                    <rating class="rating" ng-model="service.ratingAverage" max="5"></rating>
+                    <p>{{service.upvotes}} votes</p>
                 </div>
                 <div class="col">
-                    <a href="javascript:;">Show comments</a>
+                    <p style="text-align: right;">
+                        <a href="javascript:;" on-tap="showComments()">
+                            <span ng-if="isCommentsVisible">Hide</span>
+                            <span ng-if="!isCommentsVisible">Show</span>
+                            comments
+                        </a>
+                    </p>
                 </div>
             </div>
 
-            <p class="center">
-                <i class="ion-ios-arrow-down"></i>
+            <div ng-show="isCommentsVisible" ng-repeat="rating in service.ratings" >
+                <div class="item item-avatar no-border">
+                    <img ng-src="http://api.adorable.io/avatars/285/abott@{{rating.user}}.png">
+                    <h2>{{rating.user}}</h2>
+                    <p><rating class="rating" ng-model="rating.rating" max="5"></rating></p>
+                    <p style="white-space: normal;">{{rating.comments}}</p>
+                </div>
+            </div>
+
+            <p class="center" on-tap="showComments()">
+                <i ng-class="{'ion-ios-arrow-up': isCommentsVisible, 'ion-ios-arrow-down': !isCommentsVisible}"></i>
             </p>
 
         </div>
-
-        <div class="item tabs tabs-secondary tabs-icon-left">
-            <button class="button button-calm">
+        <div class="col">
+            <button class="button button-block button-calm">
                 Hire this {{service.category}}
             </button>
         </div>
