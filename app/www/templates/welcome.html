@@ -6,10 +6,9 @@
      <div id="welcome-top">
          <div class="welcome-top-text">Find a <span class="color-underline">service</span> provider near you <span class="color-underline">effortlessly</span></div>
          <div class="select-wrapper" style="padding: 10px;">
-           <select>
-             <option>Choose a category</option>
-             <option>asdas</option>
-             <option>asdas</option>
+           <select ng-model="selectedCat"
+                   ng-options="name as service.name for service in services"
+                   ng-change="goToNext()">
            </select>
          </div>
      </div>
