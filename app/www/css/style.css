@@ -9,6 +9,18 @@
     text-align: right;
 }
 
+.title {
+    font-size: 25px !important;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.light {
+    font-weight: bold;
+}
+
 .supeer-list{
   padding-right: 16px;
 }
@@ -59,3 +71,5 @@
   pointer-events: none;
   background-color: #6A6A6A;
 }
+
+
