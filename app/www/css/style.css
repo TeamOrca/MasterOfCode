@@ -73,3 +73,37 @@
 }
 
 
+.welcome-title{
+   text-align: left;
+}
+
+#welcome-top{
+  background-image: url('../img/home.jpg');
+  height: 250px;
+
+}
+.welcome-top-text{
+  text-align: center;
+  padding-top: 20%;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size:1.8em;
+  line-height: 1.8em;
+}
+
+.color-underline{
+  text-decoration-color: red;
+}
+
+#welcome-center{
+  height: 150px;
+  background-color: #4D4E53;
+  text-align: center;
+  padding: 0 5%;
+  color:white
+}
+
+.welcome-center-hightlight{
+  padding: 8% 0;
+  font-size: 1.5em;
+}
