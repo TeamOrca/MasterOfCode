@@ -2,7 +2,8 @@
   "name": "HelloIonic",
   "private": "true",
   "devDependencies": {
-    "ionic": "driftyco/ionic-bower#1.1.0"
+    "ionic": "driftyco/ionic-bower#1.1.0",
+    "ionic-rating": "~0.1.0"
   },
   "dependencies": {
     "ionic-rating": "~0.1.0",

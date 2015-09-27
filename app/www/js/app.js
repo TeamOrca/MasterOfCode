@@ -46,14 +46,10 @@ angular.module('supeer', ['ionic', 'supeer.controllers', 'supeer.services', 'ion
 
             // Each tab has its own nav history stack:
 
-            .state('tab.home', {
-                url: '/home',
-                views: {
-                    'tab-home': {
-                        templateUrl: 'templates/service-search.html',
-                        controller: 'ServiceSearchCtrl'
-                    }
-                }
+            .state('service-search', {
+                url: '/service-search',
+                templateUrl: 'templates/service-search.html',
+                controller: 'ServiceSearchCtrl'
             })
             .state('tab.search-results', {
                 url: '/search-results',

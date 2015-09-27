@@ -61,6 +61,7 @@ a {
 .select-wrapper {
   width: 100%;
   display: inline-block;
+  position: relative;
 }
 .select-wrapper::after {
   content: '';
@@ -92,8 +93,26 @@ a {
 #welcome-top{
     background-image: url('../img/home.jpg');
     height: 250px;
-
 }
+
+#welcome-top .select-wrapper select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  padding: .4em 2em .4em 1em;
+  width: 100%;
+  background-color: #FFF;
+  border: 2px #6A6A6A solid;
+  border-radius: 0px;
+  position:relative;
+}
+
+#welcome-top .select-wrapper::after{
+ right: 10px;
+}
+
 .welcome-top-text{
     text-align: center;
     padding-top: 20%;
@@ -160,6 +179,9 @@ ul.rating li {
     padding: inherit;
 }
 
+.angular-google-map-container {
+    height: 100%;
+}
 .map{
     width:100%;
     height:300px;
