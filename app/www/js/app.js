@@ -99,6 +99,28 @@ angular.module('supeer', ['ionic', 'supeer.controllers', 'supeer.services', 'ion
                 controller: 'MerchantCtrl'
 
             })
+            .state('merchantViewRequests', {
+                url: '/merchant/requests',
+                templateUrl: 'templates/merchant-request-list.html',
+                controller: 'MerchantCtrl'
+
+            })
+            .state('merchantConfirmAmount', {
+                url: '/merchant/confirm_amount',
+                templateUrl: 'templates/merchant-confirm-amount.html',
+                controller: 'MerchantCtrl'
+
+            })
+
+
+            .state('merchantHostedPayment', {
+                url: '/merchant/hosted_payment',
+                templateUrl: 'templates/merchant-hosted-payment.html',
+                controller: 'hostPaymentCtrl'
+
+            })
+
+            //
             ;
 
         // if none of the above states are matched, use this as the fallback
