@@ -1,0 +1,49 @@
+<ion-view view-title="{{service.name}}">
+
+  <ion-nav-bar>
+    <ion-nav-back-button class="button-dark">
+    </ion-nav-back-button>
+  </ion-nav-bar>
+
+  <ion-content>
+
+    <ion-slide-box on-slide-changed="slideHasChanged($index)"
+                   auto-play="true"
+                   class="service-details-slider">
+      <ion-slide ng-repeat="image in service.images">
+        <div class="box">
+          <img class="full-image" ng-src="{{image}}">
+        </div>
+      </ion-slide>
+    </ion-slide-box>
+
+    <div class="item item-avatar no-border">
+      <img ng-src="{{service.face}}">
+      <div style="float: right">
+        <p class="service-rates">
+          {{service.rate}} $ / h
+        </p>
+        <p class="item-note">
+          {{service.distance}} km
+        </p>
+      </div>
+      <h2>{{service.name}}</h2>
+      <p>{{service.category}}</p>
+      <p>No rating yet</p>
+    </div>
+
+    <div class="item item-body no-border" style="padding-top: 0">
+      <p>
+        {{service.description}}
+      </p>
+    </div>
+
+
+    <div class="col">
+      <button class="button button-block button-calm" ng-click="viewPendingRequests()">
+        View my pending requests
+      </button>
+    </div>
+
+  </ion-content>
+</ion-view>

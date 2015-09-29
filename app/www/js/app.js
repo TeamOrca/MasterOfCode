@@ -85,6 +85,12 @@ angular.module('supeer', ['ionic', 'supeer.controllers', 'supeer.services', 'ion
                 templateUrl: 'templates/merchant-edit.html',
                 controller: 'MerchantCtrl'
             })
+            .state('merchantDetails', {
+                url: '/merchant/details',
+                templateUrl: 'templates/merchant-details.html',
+                controller: 'merchantDetailsCtrl'
+            })
+
             .state('merchantViewRequests', {
                 url: '/merchant/requests',
                 templateUrl: 'templates/merchant-request-list.html',

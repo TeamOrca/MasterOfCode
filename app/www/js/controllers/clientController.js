@@ -30,15 +30,10 @@ angular.module('supeer.controllers')
                 confirmPopup.then(function(res) {
                     if(res) {
                         request.status = 'confirmed';
+                        $scope.goToHostedTransactions(request);
                     }
-
-                    $scope.goToHostedTransactions(request);
-
                 });
-            } else if(request.status === 'confirmed'){
-                $location.path('/merchant/confirm_amount');
             }
-
         };
 
         $scope.saveAndRedirect = function(){

@@ -41,7 +41,7 @@ angular.module('supeer.controllers')
         };
 
         $scope.saveAndRedirect = function(){
-            $state.go("merchantViewRequests");
+            $state.go("merchantDetails");
             console.log('SAVE AND REDIRECT');
         };
     });

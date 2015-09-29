@@ -38,6 +38,28 @@ angular.module('supeer.services')
                 distance : 0.1
             },
             {
+                id : 1,
+                name : 'Housekeepa',
+                category : 'Heusekeeper',
+                description : "So clean! You know how to disappear. We can teach you to become truly invisible. Bruce... it's okay. Don't be afraid.Let me get this straight. You think that your client, one of the wealthiest, most powerful men in the world is secretly a vigilante who spends his nights beating criminals to a pulp with his bare hands and your plan is to blackmail this person? Good luck.",
+                rate : 9,
+                thumb : 'img/housekeeper_square.jpg',
+                images : [
+                    'img/housekeeper.jpg',
+                    'img/housekeeper2.jpg',
+                    'img/housekeeper3.jpg'
+                ],
+                face : 'img/cleaning_2.png',
+                upvotes : 17,
+                position : {
+                    latitude: 45.500724,
+                    longitude : -73.557702
+                },
+                ratings : [],
+                ratingAverage : 3,
+                distance : 2.3
+            },
+            {
                 id : 2,
                 name : 'Good Housekeeping',
                 category : 'Heusekeeper',
@@ -70,7 +92,7 @@ angular.module('supeer.services')
                 name : 'Plumber inc.',
                 category : 'Plumber',
                 image : 'plumber.png',
-                description : "Magic plumbering service! My name is Merely Ducard but I speak for Ra's al Ghul... a man greatly feared by the criminal underworld. A mon who can offer you a path. Someone like you is only here by choice. You have been exploring the criminal fraternity but whatever your original intentions you have to become truly lost. The path of a man who shares his hatred of evil and wishes to serve true justice. The path of the League of Shadows.",
+                description : "Magic plumbering service! My name is Merely Ducard but I speak for Ra's al Ghul... a man greatly feared by the criminal underworld. A mon who can offer you a path. Someone like you is only here by choice. You have been exploring the criminal fraternity. The path of a man who shares his hatred of evil and wishes to serve true justice.",
                 rate : 15,
                 thumb : 'img/plumber_square.jpg',
                 images : [
@@ -100,7 +122,7 @@ angular.module('supeer.services')
                 distance : 0.4
             },
             {
-                id : 3,
+                id : 4,
                 name : 'Go Plumber',
                 category : 'Plumber',
                 image : 'plumber.png',
@@ -134,7 +156,7 @@ angular.module('supeer.services')
                 distance : 0.5
             },
             {
-                id : 3,
+                id : 5,
                 name : 'Hurry Plumber',
                 category : 'Plumber',
                 image : 'plumber.png',
@@ -168,7 +190,7 @@ angular.module('supeer.services')
                 distance : 0.7
             },
             {
-                id : 3,
+                id : 6,
                 name : 'Galaxy Plumbing',
                 category : 'Plumber',
                 image : 'plumber.png',
@@ -200,6 +222,40 @@ angular.module('supeer.services')
                 ],
                 ratingAverage : 3,
                 distance : 0.9
+            },
+            {
+                id : 7,
+                name : 'Plumberz',
+                category : 'Plumber',
+                image : 'plumber.png',
+                description : "Cheap & Quick fix for your plumbing needs.",
+                rate : 18.50,
+                thumb : 'img/plumber_square.jpg',
+                images : [
+                    'img/plumber.jpg',
+                    'img/plumber2.jpg',
+                    'img/plumber3.jpg',
+                ],
+                face : 'img/logo_pre.png',
+                upvotes : 1,
+                position : {
+                    latitude : 45.522577,
+                    longitude : -73.600571
+                },
+                ratings : [
+                    {
+                        user : 'Robert M. Coney',
+                        comments : 'Consectetur adipiscing elit. Integer in.',
+                        rating : 3
+                    },
+                    {
+                        user : 'Renae W. Alexander',
+                        comments : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis.',
+                        rating : 3
+                    }
+                ],
+                ratingAverage : 3,
+                distance : 1.5
             }
         ]
 
